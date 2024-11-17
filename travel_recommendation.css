@@ -1,0 +1,100 @@
+/* General Reset */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, rgba(0, 102, 102, 0.9), rgba(102, 204, 204, 0.9)); /* Dark peacock to lighter */
+    color: white;
+    padding: 10px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar-links a:hover {
+    color: #b2eaea; /* Lighter peacock hover effect */
+}
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    gap: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-search input {
+    flex: 1;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px 0 0 20px; /* Rounded corners for the left side */
+    outline: none;
+    font-size: 1rem;
+}
+
+.navbar-search button {
+    border: none;
+    background-color: #008080; /* Dark peacock */
+    color: white;
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners for the right side */
+}
+
+.navbar-search button:hover {
+    background-color: #66cccc; /* Lighter peacock hover */
+}
+
+navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white; /* Adjust to fit the navbar style */
+}
+
+.logo-image {
+    width: 60px; /* Adjust as needed */
+    height: auto;
+    margin-right: 10px; /* Space between the logo and company name */
+}
+
+.company-name {
+    font-size: 1rem; /* Adjust the size of the company name */
+    font-weight: bold;
+    color: white; /* Matches the navbar text color */
+}
