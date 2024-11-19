@@ -274,6 +274,15 @@ body {
 }
 
 /*Contact Page*/
+
+.contact-content-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-right: 30px; 
+    justify-content: center;
+}
+
 .contact-section {
     position: relative;
     padding: 50px 20px;
@@ -287,21 +296,20 @@ body {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    align-items: flex-start;
-    max-width: 1200px;
+    align-items: center;
     width: 100%;
 }
 
 .contact-title {
-    font-size: 2.5rem;
+    font-size: 5rem;
     font-weight: bold;
-    color: #222;
+    color: #ffffff;
     flex: 1;
 }
 
 .contact-form {
     flex: 2;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -314,7 +322,7 @@ body {
 .contact-form label {
     display: block;
     font-size: 0.9rem;
-    color: #555;
+    color: #ffffff;
     margin-bottom: 5px;
 }
 
@@ -323,9 +331,11 @@ body {
     width: 100%;
     padding: 10px;
     font-size: 1rem;
-    border: 1px solid #ccc;
+    background-color: rgba(0, 0, 0, 0.0);;
+    border: 1px solid #ffffff;
     border-radius: 4px;
     outline: none;
+    box-sizing: border-box;
 }
 
 .contact-form input:focus,
