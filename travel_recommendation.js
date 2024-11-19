@@ -75,3 +75,8 @@ const clearHandler = () => {
 // Event Listeners
 document.getElementById("searchButton").addEventListener("click", searchHandler);
 document.getElementById("clearButton").addEventListener("click", clearHandler);
+
+const searchBar = document.querySelector('.navbar-search');
+if (!window.location.pathname.endsWith('travel_recommendation.html')) {
+    searchBar.style.display = 'none';
+  }
