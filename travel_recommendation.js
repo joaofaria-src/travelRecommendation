@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const currentPage = window.location.pathname;
 
     // Pages where the search bar should be visible
-    const allowedPages = ["/index.html", "/travelRecommendation/"];
+    const allowedPages = ["/travelRecommendation/index.html", "/travelRecommendation/", "/index.html"];
 
     // Show or hide the search bar based on the current page
     if (allowedPages.includes(currentPage)) {
