@@ -77,10 +77,22 @@ document.getElementById("searchButton").addEventListener("click", searchHandler)
 document.getElementById("clearButton").addEventListener("click", clearHandler);
 
 //hide the searchbar when not on homepage
-const searchBar = document.querySelector('.navbar-search');
-if (!window.location.pathname.endsWith('index.html') || ('travelRecommendation')) {
-    searchBar.style.display = 'none';
-  }
+document.addEventListener("DOMContentLoaded", () => {
+    const searchBar = document.querySelector(".navbar-search");
+
+    // Check the current page
+    const currentPage = window.location.pathname;
+
+    // Pages where the search bar should be visible
+    const allowedPages = ["/index.html", "/travelRecommendation/"];
+
+    // Show or hide the search bar based on the current page
+    if (allowedPages.includes(currentPage)) {
+        searchBar.style.display = "flex"; // Ensure it's visible
+    } else {
+        searchBar.style.display = "none"; // Hide the search bar
+    }
+});
 
 //mobile menu
 document.getElementById('hamburgerMenu').addEventListener('click', () => {
