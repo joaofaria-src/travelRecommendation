@@ -81,3 +81,12 @@ const searchBar = document.querySelector('.navbar-search');
 if (!window.location.pathname.endsWith('travel_recommendation.html')) {
     searchBar.style.display = 'none';
   }
+
+//mobile menu
+document.getElementById('hamburgerMenu').addEventListener('click', () => {
+    document.getElementById('sidebar').classList.add('active');
+});
+
+document.getElementById('closeSidebar').addEventListener('click', () => {
+    document.getElementById('sidebar').classList.remove('active');
+});
